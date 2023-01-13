@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mein Profil</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <header class="flex">
+
+            <div class="container-header">
+
+                <h2 class="profil_profil"> Profil von <span id="username"> </span></h2>
+
+            </div>
+
+
+            <nav class="container-header">
+
+                <a href="../">
+
+                    <button id="homepage"> Zurück zur Hauptseite</button>
+                    
+                </a>
+
+                <a href="../neuesInserat.html">
+                
+                    <button id="inseratErstellen"> Inserat erstellen </button>
+                </a>
+
+                <button id="logout" onclick="logout()"> Logout </button>
+
+            </nav>
+
+        </header>
+
+        <p id="infoText"> </p>
+
+        <div id="liste-kleidung"> </div>
+
+        <script src="js/profil.js"></script>
+
+    </body>
+
+</html>

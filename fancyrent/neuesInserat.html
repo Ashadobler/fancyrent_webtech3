@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inserat erstellen</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <header class="flex">
+
+            <div class="container-header">
+
+                <h2 class="erstellen_inserat_titel">Inserat erstellen </h2>
+
+            </div>
+
+
+            <nav class="container-header">
+
+                <a href="../">
+
+                    <button id="homepage"> Zurück zur Hauptseite</button>
+                    
+                </a>
+
+                <a href="../profil.html">
+
+                    <button id="profil"> Zurück zum Profil</button>
+                    
+                </a>
+
+                <button id="logout" onclick="logout()"> Logout </button>
+
+            </nav>
+
+        </header>
+
+        <p id="infoText"> </p>
+
+
+        <div id="meineKleidung">
+
+            <div class="erstellen_titel">
+                <label for="titel">Titel</label> 
+                <input id="titel" type="text" value=""> 
+            </div>
+
+            <div class="erstellen_adresse">
+                <label for="adresse">Adresse</label> 
+                <input id="adresse" type="text" value=""> 
+            </div>
+
+            <div class="erstellen_stadt">
+                <label for="stadt">Stadt</label> 
+                <input id="stadt" type="text" value=""> 
+            </div>
+
+            <div class="erstellen_bild">
+                <label for="bild">Bild URL</label> 
+                <input id="bild" type="text" value=""> 
+                <img id="bild-vorschau" width="300px" src="" alt=""> 
+            </div>
+
+            <div class="erstellen_beschreibung">
+                <label for="beschreibung">Beschreibung</label> <br>
+                <textarea id="beschreibung" name="beschreibung"> </textarea> 
+            </div>
+
+            <div class="erstellen_size">
+                <label for="size">Grösse</label> 
+                <input id="size" type="text" value=""> 
+            </div>
+
+            <div class="erstellen_preis">
+                <label for="preis">Preis</label> 
+                <input id="preis" type="text" value=""> 
+            </div>
+
+            <div class="erstellen_kleidungstyp">
+                <label for="kleidungstyp">Für wen ist dein Kleidungsstück</label> <br>
+                <select class="dropdown" name="kleidungstyp" id="kleidungstyp">
+                    <option value="2">Herren</option>
+                    <option value="1">Damen</option>
+                    <option value="3">Kinder</option>
+                </select> 
+            </div>
+
+            <div class="erstellen_status">
+                <p>Status</p>
+                <input type="radio" id="status-frei" name="status" value="1">
+                <label for="status-frei">Verfügbar</label>
+                <input type="radio" id="status-besetzt" name="status" value="0">
+                <label for="status-besetzt">Nicht Verfügbar</label>
+            </div>
+
+        </div>
+
+        <div class="erstellen_buttons">
+            <button class="hidden" id="button-neue" onclick="neueKleidung()">Veröffentlichen</button>
+        </div>
+
+        <p id="nachricht"> </p>
+        
+        <script src="js/neuesInserat.js"></script>
+
+    </body>
+
+</html>

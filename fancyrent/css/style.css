@@ -1,0 +1,302 @@
+/* schrift einbinden */
+
+@font-face {
+    font-family: 'Poppins Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Poppins Regular'), url('Poppins-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Poppins SemiBold'), url('Poppins-SemiBold.woff') format('woff');
+}
+
+/* Allgemeines */
+
+html {
+    font-family: 'Poppins Regular', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    color: #765b5b;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+body{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/*
+Container Header:
+*/
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1mm inset #eeeeee;
+}
+
+.container-header {
+    width: 100%;
+}
+
+/*
+Buttons:
+*/
+
+nav {
+    text-align: right;
+}
+
+#logout {
+    background-color: #c1a1a1;
+}
+
+a {
+    text-decoration: none;
+} 
+
+button {
+    font-family: 'Poppins SemiBold', sans-serif;
+    margin: 10px;
+    margin-left: 0;
+    background-color: #e7d2d2;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    }
+
+/* Formular - Inserat erstellen */
+
+.erstellen_inserat_titel{
+    font-size: 40px;
+    color: #765b5b;
+}
+
+#meineKleidung {
+    width: 50%;
+  }
+
+#titel, #adresse, #stadt, #bild, #size, #preis, #status-besetzt{
+    margin-left: 10px;
+}
+
+input {
+    margin: 10px;
+    font-family: 'Poppins Regular', sans-serif;
+    margin-left: 0;
+}
+
+textarea {
+    margin: 2px;
+    width: 50%;
+    font-family: 'Poppins Regular', sans-serif;
+}
+
+.dropdown{
+    font-family: 'Poppins Regular', sans-serif;
+    margin: 10px;  
+    margin-left: 0;
+}
+
+/* Hauptseite - alle Inserate */
+
+#liste-kleidung {
+    display:grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 40px;
+
+}
+
+.kleidung {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 18px;
+    flex-basis: content;
+}
+
+/* Reihenfolge ändern alle Inserate */
+
+.kleidung-image {
+    width: 100%;
+    order: 1;
+    border-radius: 18px;
+    display: block;
+}
+
+.inserat_titel{
+    order: 2;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.inserat_absender{
+    order: 3;
+    font-size: 10px;
+    margin-bottom: 0;
+}
+
+.inserat_beschreibung{
+    order: 4;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.inserat_groesse{
+    order: 5;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.inserat_size{
+    order: 6;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 12px;
+}
+
+.inserat_preis{
+    order: 7;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.inserat_chf{
+    order: 8;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 12px;
+}
+
+.inserat_standort{
+    order: 9;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.inserat_stadt{
+    order: 10;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 12px;
+}
+
+.inserat_adresse{
+    order: 11;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 12px;
+}
+
+.inserat_email{
+    order: 12;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.inserat_mail{
+    order: 13;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 16px;
+}
+
+/* Profilbereich */
+
+.profil_profil{
+    font-size: 40px;
+    color: #765b5b;
+}
+
+/* Reihenfolge ändern Profilbereich */
+
+.profil_titel{
+    order: 2;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+
+.profil_beschreibung{
+    order: 3;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.profil_groesse{
+    order: 4;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.profil_size{
+    order: 5;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 12px;
+}
+
+.profil_preis{
+    order: 6;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.profil_chf{
+    order: 7;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 12px;
+}
+
+.profil_standort{
+    order: 8;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.profil_stadt{
+    order: 9;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 12px;
+}
+
+.profil_adresse{
+    order: 10;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 12px;
+}
+
+.profil_bild{
+    order: 11;
+    margin-bottom: 0;
+    font-size: 16px;
+    
+}
